@@ -1,296 +1,24 @@
-ul.tabmenu {
-    list-style: none;
-}
-ul.tabmenu li {
-    float: left;
-    margin-right: 5px;
-    padding: 20px;
-    background-color: #7058a3;
-    color: #fff;
-    cursor: pointer;
-　　font-size: 1.2em;
-}
-ul.tabmenu li:hover {
-    background-color: #522f60;
-}
-ul.tabmenu li.active {
-    background-color: #522f60;
-    color: #fff;
-}
-div.tabContent {
-    clear: both;
-    padding: 10px;
-    width: 90%;
-    display: none;
-}
-div.active {
-    display: block;
-}
-
-ul.tabmenu1 {
-    list-style: none;
-}
-ul.tabmenu1 li {
-    float: left;
-    margin-right: 5px;
-    padding: 20px;
-    background-color: #7058a3;
-    color: #fff;
-    cursor: pointer;
-　　font-size: 1.2em;
-}
-ul.tabmenu1 li:hover {
-    background-color: #522f60;
-}
-ul.tabmenu1 li.active {
-    background-color: #522f60;
-    color: #fff;
-}
-div.tabContent1 {
-    clear: both;
-    padding: 10px;
-    width: 90%;
-    display: none;
-}
-div.active {
-    display: block;
-}
-
-ul.tabmenu2 {
-    list-style: none;
-}
-ul.tabmenu2 li {
-    float: left;
-    margin-right: 5px;
-    padding: 20px;
-    background-color: #7058a3;
-    color: #fff;
-    cursor: pointer;
-　　font-size: 1.2em;
-}
-ul.tabmenu2 li:hover {
-    background-color: #522f60;
-}
-ul.tabmenu2 li.active {
-    background-color: #522f60;
-    color: #fff;
-}
-div.tabContent2 {
-    clear: both;
-    padding: 10px;
-    width: 90%;
-    display: none;
-}
-div.active {
-    display: block;
-}
-
-ul.tabmenu3 {
-    list-style: none;
-}
-ul.tabmenu3 li {
-    float: left;
-    margin-right: 5px;
-    padding: 20px;
-    background-color: #7058a3;
-    color: #fff;
-    cursor: pointer;
-　　font-size: 1.2em;
-}
-ul.tabmenu3 li:hover {
-    background-color: #522f60;
-}
-ul.tabmenu3 li.active {
-    background-color: #522f60;
-    color: #fff;
-}
-div.tabContent3 {
-    clear: both;
-    padding: 10px;
-    width: 90%;
-    display: none;
-}
-div.active {
-    display: block;
-}
-
-ul.tabmenu4 {
-    list-style: none;
-}
-ul.tabmenu4 li {
-    float: left;
-    margin-right: 5px;
-    padding: 20px;
-    background-color: #7058a3;
-    color: #fff;
-    cursor: pointer;
-　　font-size: 1.2em;
-}
-ul.tabmenu4 li:hover {
-    background-color: #522f60;
-}
-ul.tabmenu4 li.active {
-    background-color: #522f60;
-    color: #fff;
-}
-div.tabContent4 {
-    clear: both;
-    padding: 10px;
-    width: 90%;
-    display: none;
-}
-div.active {
-    display: block;
-}
-
-ul.tabmenu5 {
-    list-style: none;
-}
-ul.tabmenu5 li {
-    float: left;
-    margin-right: 5px;
-    padding: 20px;
-    background-color: #7058a3;
-    color: #fff;
-    cursor: pointer;
-　　font-size: 1.2em;
-}
-ul.tabmenu5 li:hover {
-    background-color: #522f60;
-}
-ul.tabmenu5 li.active {
-    background-color: #522f60;
-    color: #fff;
-}
-div.tabContent5 {
-    clear: both;
-    padding: 10px;
-    width: 90%;
-    display: none;
-}
-div.active {
-    display: block;
-}
-
-ul.tabmenu6 {
-    list-style: none;
-}
-ul.tabmenu6 li {
-    float: left;
-    margin-right: 5px;
-    padding: 20px;
-    background-color: #7058a3;
-    color: #fff;
-    cursor: pointer;
-　　font-size: 1.2em;
-}
-ul.tabmenu6 li:hover {
-    background-color: #522f60;
-}
-ul.tabmenu6 li.active {
-    background-color: #522f60;
-    color: #fff;
-}
-div.tabContent6 {
-    clear: both;
-    padding: 10px;
-    width: 90%;
-    display: none;
-}
-div.active {
-    display: block;
-}
-
-ul.tabmenu7 {
-    list-style: none;
-}
-ul.tabmenu7 li {
-    float: left;
-    margin-right: 5px;
-    padding: 20px;
-    background-color: #7058a3;
-    color: #fff;
-    cursor: pointer;
-　　font-size: 1.2em;
-}
-ul.tabmenu7 li:hover {
-    background-color: #522f60;
-}
-ul.tabmenu7 li.active {
-    background-color: #522f60;
-    color: #fff;
-}
-div.tabContent7 {
-    clear: both;
-    padding: 10px;
-    width: 90%;
-    display: none;
-}
-div.active {
-    display: block;
-}
-
-ul.tabmenu8 {
-    list-style: none;
-}
-ul.tabmenu8 li {
-    float: left;
-    margin-right: 5px;
-    padding: 20px;
-    background-color: #7058a3;
-    color: #fff;
-    cursor: pointer;
-　　font-size: 1.2em;
-}
-ul.tabmenu8 li:hover {
-    background-color: #522f60;
-}
-ul.tabmenu8 li.active {
-    background-color: #522f60;
-    color: #fff;
-}
-div.tabContent8 {
-    clear: both;
-    padding: 10px;
-    width: 90%;
-    display: none;
-}
-div.active {
-    display: block;
-}
-
-ul.tabmenu9 {
-    list-style: none;
-}
-ul.tabmenu9 li {
-    float: left;
-    margin-right: 5px;
-    padding: 20px;
-    background-color: #7058a3;
-    color: #fff;
-    cursor: pointer;
-　　font-size: 1.2em;
-}
-ul.tabmenu9 li:hover {
-    background-color: #522f60;
-}
-ul.tabmenu9 li.active {
-    background-color: #522f60;
-    color: #fff;
-}
-div.tabContent9 {
-    clear: both;
-    padding: 10px;
-    width: 90%;
-    display: none;
-}
-div.active {
-    display: block;
-}
-
+ul.tabmenu1,
+ul.tabmenu2,
+ul.tabmenu3,
+ul.tabmenu4,
+ul.tabmenu5,
+ul.tabmenu6,
+ul.tabmenu7,
+ul.tabmenu8,
+ul.tabmenu9,
 ul.tabmenu10 {
     list-style: none;
 }
+ul.tabmenu1 li,
+ul.tabmenu2 li,
+ul.tabmenu3 li,
+ul.tabmenu4 li,
+ul.tabmenu5 li,
+ul.tabmenu6 li,
+ul.tabmenu7 li,
+ul.tabmenu8 li,
+ul.tabmenu9 li,
 ul.tabmenu10 li {
     float: left;
     margin-right: 5px;
@@ -300,13 +28,40 @@ ul.tabmenu10 li {
     cursor: pointer;
 　　font-size: 1.2em;
 }
+ul.tabmenu1 li:hover,
+ul.tabmenu2 li:hover,
+ul.tabmenu3 li:hover,
+ul.tabmenu4 li:hover,
+ul.tabmenu5 li:hover,
+ul.tabmenu6 li:hover,
+ul.tabmenu7 li:hover,
+ul.tabmenu8 li:hover,
+ul.tabmenu9 li:hover,
 ul.tabmenu10 li:hover {
     background-color: #522f60;
 }
+ul.tabmenu1 li.active,
+ul.tabmenu2 li.active,
+ul.tabmenu3 li.active,
+ul.tabmenu4 li.active,
+ul.tabmenu5 li.active,
+ul.tabmenu6 li.active,
+ul.tabmenu7 li.active,
+ul.tabmenu8 li.active,
+ul.tabmenu9 li.active,
 ul.tabmenu10 li.active {
     background-color: #522f60;
     color: #fff;
 }
+div.tabContent1,
+div.tabContent2,
+div.tabContent3,
+div.tabContent4,
+div.tabContent5,
+div.tabContent6,
+div.tabContent7,
+div.tabContent8,
+div.tabContent9,
 div.tabContent10 {
     clear: both;
     padding: 10px;
