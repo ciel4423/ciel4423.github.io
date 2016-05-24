@@ -1,3 +1,32 @@
+ul.tabmenu {
+    list-style: none;
+}
+ul.tabmenu li {
+    float: left;
+    margin-right: 5px;
+    padding: 20px;
+    background-color: #7058a3;
+    color: #fff;
+    cursor: pointer;
+　　font-size: 1.2em;
+}
+ul.tabmenu li:hover {
+    background-color: #522f60;
+}
+ul.tabmenu li.active {
+    background-color: #522f60;
+    color: #fff;
+}
+div.tabContent {
+    clear: both;
+    padding: 10px;
+    width: 90%;
+    display: none;
+}
+div.active {
+    display: block;
+}
+
 ul.tabmenu1 {
     list-style: none;
 }
