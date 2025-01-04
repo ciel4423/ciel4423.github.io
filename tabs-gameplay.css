@@ -3,7 +3,6 @@
 .tab-wrap {
     display: flex;
     flex-wrap: wrap;
-    border-bottom: 3px solid #5654a2;
 }
 .tab-label {
     color: #fff;
