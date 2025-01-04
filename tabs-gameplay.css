@@ -3,6 +3,7 @@
 .tab-wrap {
     display: flex;
     flex-wrap: wrap;
+    border-bottom: 3px solid #5654a2;
 }
 .tab-label {
     color: #fff;
@@ -14,7 +15,6 @@
 .tab-content {
     width: 100%;
     display: none;
-    border-bottom: 3px solid #5654a2;
 }
 /* アクティブなタブ */
 .tab-switch:checked+.tab-label {
