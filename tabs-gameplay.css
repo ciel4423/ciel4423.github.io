@@ -14,7 +14,7 @@
 .tab-content {
     width: 100%;
     display: none;
-    background: lightgray;
+    border-bottom: 3px solid #5654a2;
 }
 /* アクティブなタブ */
 .tab-switch:checked+.tab-label {
