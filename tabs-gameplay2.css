@@ -2,7 +2,7 @@
 .tab-wrap {
   display: flex;
   flex-wrap: wrap;
-  margin:20px 0;
+  margin:5px 0;
 }
 .tab-wrap:after {
   content: '';
