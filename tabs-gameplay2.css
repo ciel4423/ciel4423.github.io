@@ -25,8 +25,7 @@
   position: relative;
   z-index: 1;
   cursor: pointer;
-  border-radius: 5px 5px 0 0;
-  flex: 1;
+  border-radius: 5px;
 }
 .tab-label:not(:last-of-type) {
   margin-right: 5px;
