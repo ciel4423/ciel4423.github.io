@@ -13,7 +13,7 @@
   display: block;
   order: -1;
 }
-.tab-label {
+.tab-wrap>label {
   color: White;
   background: LightGray;
   font-weight: bold;
@@ -27,7 +27,7 @@
   cursor: pointer;
   border-radius: 5px;
 }
-.tab-label:not(:last-of-type) {
+.tab-wrap>label:not(:last-of-type) {
   margin-right: 5px;
 }
 .tab-content {
@@ -37,10 +37,10 @@
   opacity: 0;
 }
 /* アクティブなタブ */
-.tab-switch:checked+.tab-label {
+.tab-wrap>input[type="radio"]:checked+.tab-wrap>label {
   background: #19448e;
 }
-.tab-switch:checked+.tab-label+.tab-content {
+.tab-wrap>input[type="radio"]:checked+.tab-wrap>label+.tab-content {
   height: auto;
   overflow: auto;
   padding: 5px;
@@ -49,6 +49,6 @@
   box-shadow: 0 0 3px rgba(0,0,0,.2);
 }
 /* ラジオボタン非表示 */
-.tab-switch {
+.tab-wrap>input[type="radio"] {
   display: none;
 }
