@@ -14,17 +14,20 @@ function currentSlide(n, no) {
 function showSlides(n, no) {
     let i;
     const slides = document.getElementById(slideId[no]).getElementsByClassName("slides");
-    const dots = document.querySelectorAll(`#${slideId[no]} ~ .button-container .dot`);
+    const pageContainer = document.getElementById(`page-container${no+1}`);
     if (n > slides.length) { slideIndex[no] = 1 }
     if (n < 1) { slideIndex[no] = slides.length }
     for (i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";  
     }
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-    }
-    slides[slideIndex[no]-1].style.display = "block";  
-    dots[slideIndex[no]-1].className += " active";
+    slides[slideIndex[no]-1].style.display = "block";
+
+    // ページ番号の更新
+    pageContainer.innerHTML = "";
+    const pageNumber = document.createElement("span");
+    pageNumber.classList.add("page-number");
+    pageNumber.innerText = `${slideIndex[no]} / ${slides.length}`;
+    pageContainer.appendChild(pageNumber);
 }
 
 function addTouchEvent(container, slideIndex, slideId) {
