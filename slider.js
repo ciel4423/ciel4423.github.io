@@ -1,26 +1,31 @@
-    let slideIndex = [1, 1];
-    let slideId = ["slideshow1", "slideshow2", "slideshow3", "slideshow4", "slideshow5", "slideshow6", "slideshow7", "slideshow8", "slideshow9", "slideshow10"];
-    showSlides(1, 0);
-    showSlides(1, 1);
+let slideIndex = [1, 1];
+let slideId = ["slideshow1", "slideshow2"];
+showSlides(1, 0);
+showSlides(1, 1);
 
-    function plusSlides(n, no) {
-        showSlides(slideIndex[no] += n, no);
-    }
+function plusSlides(n, no) {
+    showSlides(slideIndex[no] += n, no);
+}
 
-    function currentSlide(n, no) {
-        showSlides(slideIndex[no] = n, no);
-    }
+function currentSlide(n, no) {
+    showSlides(slideIndex[no] = n, no);
+}
 
-    function showSlides(n, no) {
-        let i;
-        let x = document.getElementById(slideId[no]).getElementsByClassName("slides");
-        if (n > x.length) {slideIndex[no] = 1}
-        if (n < 1) {slideIndex[no] = x.length}
-        for (i = 0; i < x.length; i++) {
-            x[i].style.display = "none";
-        }
-        x[slideIndex[no]-1].style.display = "block";
+function showSlides(n, no) {
+    let i;
+    const slides = document.getElementById(slideId[no]).getElementsByClassName("slides");
+    const dots = document.querySelectorAll(`#${slideId[no]} ~ .button-container .dot`);
+    if (n > slides.length) { slideIndex[no] = 1 }
+    if (n < 1) { slideIndex[no] = slides.length }
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
     }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex[no]-1].style.display = "block";  
+    dots[slideIndex[no]-1].className += " active";
+}
 
 function addTouchEvent(container, slideIndex, slideId) {
     let touchStartX = 0;
