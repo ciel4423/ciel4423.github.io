@@ -46,12 +46,12 @@
     width: 100px;
 }
 .slides img {
-    height: 500px; /* 固定したい最大の高さ */
+    max-height: 500px; /* 固定したい最大高さ */
     width: auto;
 }
 @media only screen and (max-width: 600px) {
     .slides img {
-        height: 400px; /* スマホ用の最大高さ */
+        max-height: 400px; /* スマホ用の最大高さ */
         width: auto;
     }
 }
