@@ -45,7 +45,7 @@
     transition: 0.3s;
     font-size: 1rem;
 }
-.button-container button:hover {
+.button-container button.active {
     background-color: #522f60;
 }
 .slides img {
