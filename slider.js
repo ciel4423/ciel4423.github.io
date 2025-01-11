@@ -1,5 +1,5 @@
 let slideIndex = [1, 1];
-let slideId = ["slideshow1", "slideshow2"];
+let slideId = ["slideshow1", "slideshow2", "slideshow3", "slideshow4", "slideshow5", "slideshow6", "slideshow7", "slideshow8", "slideshow9", "slideshow10"];
 showSlides(1, 0);
 showSlides(1, 1);
 
