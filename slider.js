@@ -1,5 +1,5 @@
-let slideIndex = Array(slideId.length).fill(1);
 let slideId = ["slideshow1", "slideshow2", "slideshow3", "slideshow4", "slideshow5", "slideshow6", "slideshow7", "slideshow8", "slideshow9", "slideshow10"];
+let slideIndex = Array(slideId.length).fill(1);
 
 slideId.forEach((id, index) => showSlides(1, index));
 
