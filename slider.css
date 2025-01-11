@@ -30,23 +30,20 @@
     right: 0;
     border-radius: 0 3px 3px 0;
 }
-.button-container {
+.page-container {
     text-align: center;
     position: relative;
+    font-size: 1.1rem;
+    margin: 3px 0;
 }
-.button-container button {
-    cursor: pointer;
-    padding: 10px;
-    margin: 2px;
+.page-number {
+    display: inline-block;
+    padding: 8px;
     background-color: #4d5aaf;
     color: white;
-    border: none;
     border-radius: 5px;
     transition: 0.3s;
-    font-size: 1rem;
-}
-.button-container button.active {
-    background-color: #522f60;
+    width: 100px;
 }
 .slides img {
     max-height: 500px; /* 固定したい最大の高さ */
