@@ -46,7 +46,7 @@
     width: 100px;
 }
 .slides img {
-    max-height: 500px; /* 固定したい最大の高さ */
+    height: 500px; /* 固定したい最大の高さ */
     width: auto;
 }
 @media only screen and (max-width: 600px) {
