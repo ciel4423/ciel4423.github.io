@@ -34,23 +34,23 @@ function addTouchEvent(container, slideIndex, slideId) {
     let touchEndX = 0;
 
     container.addEventListener('touchstart', function(event) {
-        console.log("タッチ開始");
+        console.log("タッチ開始 - slideIndex:", slideIndex, "slideId:", slideId);
         touchStartX = event.changedTouches[0].screenX;
     }, false);
 
     container.addEventListener('touchend', function(event) {
-        console.log("タッチ終了");
+        console.log("タッチ終了 - slideIndex:", slideIndex, "slideId:", slideId);
         touchEndX = event.changedTouches[0].screenX;
         handleGesture(slideIndex, slideId);
     }, false);
 
     function handleGesture(slideIndex, slideId) {
         if (touchEndX < touchStartX) {
-            console.log("左スワイプ検出");
+            console.log("左スワイプ検出 - slideIndex:", slideIndex);
             plusSlides(1, slideIndex);
         }
         if (touchEndX > touchStartX) {
-            console.log("右スワイプ検出");
+            console.log("右スワイプ検出 - slideIndex:", slideIndex);
             plusSlides(-1, slideIndex);
         }
     }
@@ -58,5 +58,6 @@ function addTouchEvent(container, slideIndex, slideId) {
 
 const containers = document.querySelectorAll('.slideshow-container');
 containers.forEach((container, index) => {
+    console.log("イベントリスナー追加 - container:", container, "index:", index);
     addTouchEvent(container, index, slideId[index]);
 });
