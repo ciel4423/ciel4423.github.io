@@ -36,12 +36,16 @@ function addTouchEvent(container, slideIndex, slideId) {
     container.addEventListener('touchstart', function(event) {
         console.log("タッチ開始 - slideIndex:", slideIndex, "slideId:", slideId);
         touchStartX = event.changedTouches[0].screenX;
+        event.stopPropagation();
+        event.preventDefault();
     }, false);
 
     container.addEventListener('touchend', function(event) {
         console.log("タッチ終了 - slideIndex:", slideIndex, "slideId:", slideId);
         touchEndX = event.changedTouches[0].screenX;
         handleGesture(slideIndex, slideId);
+        event.stopPropagation();
+        event.preventDefault();
     }, false);
 
     function handleGesture(slideIndex, slideId) {
