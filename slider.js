@@ -22,7 +22,6 @@ function showSlides(n, no) {
     }
     slides[slideIndex[no] - 1].style.display = "block";
 
-    // ページ番号の更新
     pageContainer.innerHTML = "";
     const pageNumber = document.createElement("span");
     pageNumber.classList.add("page-number");
@@ -35,25 +34,28 @@ function addTouchEvent(container, slideIndex, slideId) {
     let touchEndX = 0;
 
     container.addEventListener('touchstart', function(event) {
+        console.log("タッチ開始");
         touchStartX = event.changedTouches[0].screenX;
     }, false);
 
     container.addEventListener('touchend', function(event) {
+        console.log("タッチ終了");
         touchEndX = event.changedTouches[0].screenX;
         handleGesture(slideIndex, slideId);
     }, false);
 
     function handleGesture(slideIndex, slideId) {
         if (touchEndX < touchStartX) {
-            plusSlides(1, slideIndex); // 次のスライドへ
+            console.log("左スワイプ検出");
+            plusSlides(1, slideIndex);
         }
         if (touchEndX > touchStartX) {
-            plusSlides(-1, slideIndex); // 前のスライドへ
+            console.log("右スワイプ検出");
+            plusSlides(-1, slideIndex);
         }
     }
 }
 
-// コンテナごとにタッチイベントを追加
 const containers = document.querySelectorAll('.slideshow-container');
 containers.forEach((container, index) => {
     addTouchEvent(container, index, slideId[index]);
