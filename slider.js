@@ -1,16 +1,21 @@
+// スライドショーIDのリストと各スライドショーのインデックスを初期化
 let slideId = ["slideshow1", "slideshow2", "slideshow3", "slideshow4", "slideshow5", "slideshow6", "slideshow7", "slideshow8", "slideshow9", "slideshow10"];
 let slideIndex = Array(slideId.length).fill(1);
 
+// 初期表示
 slideId.forEach((id, index) => showSlides(1, index));
 
+// 前後のスライドを表示する関数
 function plusSlides(n, no) {
     showSlides(slideIndex[no] += n, no);
 }
 
+// 現在のスライドを指定する関数
 function currentSlide(n, no) {
     showSlides(slideIndex[no] = n, no);
 }
 
+// スライドを表示する関数
 function showSlides(n, no) {
     let i;
     const slides = document.getElementById(slideId[no]).getElementsByClassName("slides");
@@ -22,46 +27,10 @@ function showSlides(n, no) {
     }
     slides[slideIndex[no] - 1].style.display = "block";
 
+    // ページ番号の更新
     pageContainer.innerHTML = "";
     const pageNumber = document.createElement("span");
     pageNumber.classList.add("page-number");
     pageNumber.innerText = `${slideIndex[no]} / ${slides.length}`;
     pageContainer.appendChild(pageNumber);
 }
-
-function addTouchEvent(container, slideIndex, slideId) {
-    let touchStartX = 0;
-    let touchEndX = 0;
-
-    container.addEventListener('touchstart', function(event) {
-        console.log("タッチ開始 - slideIndex:", slideIndex, "slideId:", slideId);
-        touchStartX = event.changedTouches[0].screenX;
-        event.stopPropagation();
-        event.preventDefault();
-    }, false);
-
-    container.addEventListener('touchend', function(event) {
-        console.log("タッチ終了 - slideIndex:", slideIndex, "slideId:", slideId);
-        touchEndX = event.changedTouches[0].screenX;
-        handleGesture(slideIndex, slideId);
-        event.stopPropagation();
-        event.preventDefault();
-    }, false);
-
-    function handleGesture(slideIndex, slideId) {
-        if (touchEndX < touchStartX) {
-            console.log("左スワイプ検出 - slideIndex:", slideIndex);
-            plusSlides(1, slideIndex);
-        }
-        if (touchEndX > touchStartX) {
-            console.log("右スワイプ検出 - slideIndex:", slideIndex);
-            plusSlides(-1, slideIndex);
-        }
-    }
-}
-
-const containers = document.querySelectorAll('.slideshow-container');
-containers.forEach((container, index) => {
-    console.log("イベントリスナー追加 - container:", container, "index:", index);
-    addTouchEvent(container, index, slideId[index]);
-});
